@@ -1,0 +1,251 @@
+
+body{
+    box-sizing: border-box;
+    background-color: gray;
+    font-family: "Roboto";
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: white;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 32px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.booklist{
+    margin-top: 20px;
+}
+
+.booklist-heading{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: azure;
+    margin-bottom: 20px;
+}
+.booklist-card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto; 
+   
+}
+.booklist-card-single{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booklist-title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 0;
+    border-bottom:1px solid black ;
+}
+.booklist-author{
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.booklist-rating{
+    padding: 10px 0;
+}
+.booklist-date{
+    padding: 10px 0;
+}
+.booklist-card-single:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+   
+}
+
+.addbook-form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.addbook-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.addbook-form label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    
+  }
+  
+.addbook-form input {
+    padding: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  
+.addbook-form textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 4px;
+    font-size: 12px;
+    resize: vertical; 
+  }
+
+.addbook-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+.addbook-form button:hover {
+    background-color: #0056b3;
+  }
+  
+.updatebook{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    background-color:  #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 60px;
+  }
+.updatebook label{
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+.updatebook textarea{
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    border-radius: 4px;
+    font-size: 12px;
+    resize: vertical;
+  }
+.updatebook button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+ 
+.updatebook button:hover{
+    background-color: #0056b3;
+  }
+
+.book-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.book-div-head{
+  display: flex;
+  justify-content: center;
+  padding-top:20px;
+  font-size: 24px;
+  color: white;
+
+}
+
+.book-card{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  background-color:  #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Roboto';
+}  
+
+.book-card-buttons{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+
+.book-card-buttons button{
+  background-color: #007bff;
+    color: #fff;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.book-card-buttons :last-child{
+  background-color: red;
+}
+
+.book-card-title{
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+
+}
+
+.book-card-heading{
+    color: gray;
+    font-size: 16px;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+.book-card-notes{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
